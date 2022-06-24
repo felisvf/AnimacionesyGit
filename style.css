@@ -1,136 +1,188 @@
-*{margin: 0%;
+* {
+  margin: 0%;
   padding: 0%;
 }
-.banner1{ width: 250px;}
-.heart1{ width: 250px;}
-.laught1{ width: 250px;}
-.night1{ width: 250px;}
-.sad1{ width: 250px;}
-.questions1{ width: 250px;}
-.loveimg1{ width: 300px;}
-.laughtimg1{width: 300px;}
-.gif1{ width: 300px;}  
-.terrorimg1{width: 300px;}
-.sad2{width: 300px;}
-.confused2{width: 300px;}
-
-h1{color: rgb(78, 148, 79);
-text-align: center;
-font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-font-style: oblique;
-background-color: rgb(180, 225, 151);
-border-color: black;
-border: solid;
+.banner1 {
+  width: 250px;
+}
+.heart1 {
+  width: 250px;
+}
+.laught1 {
+  width: 250px;
+}
+.night1 {
+  width: 250px;
+}
+.sad1 {
+  width: 250px;
+}
+.questions1 {
+  width: 250px;
+}
+.loveimg1 {
+  width: 300px;
+}
+.laughtimg1 {
+  width: 300px;
+}
+.gif1 {
+  width: 300px;
+}
+.terrorimg1 {
+  width: 300px;
+}
+.sad2 {
+  width: 300px;
+}
+.confused2 {
+  width: 300px;
 }
 
-h2{color: rgb(78, 148, 79);
-text-align: center;
-font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-font-style: oblique;
-background-color: rgb(180, 225, 151);
+h1 {
+  color: rgb(78, 148, 79);
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: oblique;
+  background-color: rgb(180, 225, 151);
+  border-color: black;
+  border: solid;
 }
 
-.body1{
-display: grid;
-grid-template-columns: auto;
-grid-template-rows: auto;
-grid-template-areas: "nav"
-                      "main"
-                      "footer";
+h2 {
+  color: rgb(78, 148, 79);
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: oblique;
+  background-color: rgb(180, 225, 151);
 }
 
-.body1 header nav{ 
-grid-area: nav;
-display: flex;
-flex-direction: row;
-justify-content: center;
-background-color: rgb(245, 223, 153);
+.bodyindex {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "nav"
+    "main"
+    "footer";
 }
 
-.body1 header nav ul{ display: flex;
-justify-content: center;
-list-style: none;
-  
+.bodyindex header nav {
+  grid-area: nav;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(245, 223, 153);
 }
 
-.body1 header nav ul li{
-padding: 2px;
-margin: 10px 0px;
-
+.bodyindex header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
 }
 
-.body1 main{
-grid-area: main;
-align-items: center;
-text-align: center;
-background-color: rgb(233, 239, 192);
+.bodyindex header nav ul li {
+  padding: 2px;
+  margin: 10px 0px;
+}
+
+.bodyindex main {
+  grid-area: main;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(233, 239, 192);
+}
+
+.bodyindex footer {
+  grid-area: footer;
+  background-color: rgb(128, 126, 123);
+  border: solid;
+  color: rgb(0, 0, 0) 2px;
+  border-style: double;
+}
+
+.bodypages {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "nav2"
+    "main2"
+    "footer2";
+}
+
+.bodypages header nav {
+  grid-area: nav2;
+  display: flex;
+}
+
+.bodypages header nav ul {
+  justify-content: center;
+  list-style: none;
+}
+
+.bodypages header nav ul li {
+  padding: 2px;
+  text-align: center;
+}
+
+.bodypages main {
+  grid-area: main2;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(233, 239, 192);
+}
+
+.bodypages footer {
+  grid-area: footer2;
+  background-color: rgb(128, 126, 123);
+  border: solid;
+  color: rgb(0, 0, 0) 2px;
+  border-style: double;
+}
+
+@media (min-width: 1200px) {
+  .banner1 {
+    width: 1110px;
+  }
+  .banner1 {
+    width: 800px;
+  }
+  .heart1 {
+    width: 800px;
+  }
+  .laught1 {
+    width: 800px;
+  }
+  .night1 {
+    width: 800px;
+  }
+  .sad1 {
+    width: 800px;
+  }
+  .questions1 {
+    width: 800px;
+  }
+  .loveimg1 {
+    width: 800px;
+  }
+  .laughtimg1 {
+    width: 800px;
+  }
+  .gif1 {
+    width: 800px;
+  }
+  .terrorimg1 {
+    width: 800px;
+  }
+  .sad2 {
+    width: 800px;
+  }
+  .confused2 {
+    width: 800px;
   }
 
-.body1 footer{
-grid-area: footer;
-background-color: rgb(128, 126, 123);
-border: solid;color: rgb(0, 0, 0) 2px;
-border-style: double;
-}
-
-.body2{ display: grid;
-grid-template-columns: auto;
-grid-template-rows: auto;
-grid-template-areas: "nav2"
-                      "main2"
-                      "footer2";
-
-}
-
-.body2 header nav{ 
-grid-area: nav2;
-display: flex
-}
-
-.body2 header nav ul{
-justify-content: center;
-list-style: none;
-}
-
-.body2 header nav ul li{
-padding: 2px;
-text-align: center;
-
-}
-
-.body2 main{
-grid-area: main2;
-align-items: center;
-text-align: center;
-background-color: rgb(233, 239, 192)
- }
-
-.body2 footer{
-
-grid-area: footer2;
-background-color: rgb(128, 126, 123);
-border: solid;color: rgb(0, 0, 0) 2px;
-border-style: double;
-}
-
-@media(min-width: 1200px)
-{
-.banner1{width: 1110px;}
-  .banner1{ width: 800px;}
-  .heart1{ width: 800px;}
-  .laught1{ width: 800px;}
-  .night1{ width: 800px;}
-  .sad1{ width: 800px;}
-  .questions1{ width: 800px;}
-  .loveimg1{ width: 800px;}
-  .laughtimg1{width: 800px;}
-  .gif1{ width: 800px;}  
-  .terrorimg1{width: 800px;}
-  .sad2{width: 800px;}
-  .confused2{width: 800px;}
-
-  h1{
-  
+  h1 {
     color: rgb(78, 148, 79);
     width: 50;
     font-size: 100px;
@@ -139,117 +191,104 @@ border-style: double;
     font-style: oblique;
     bottom: 220px;
     background-color: rgb(180, 225, 151);
-  
+
     border-color: black;
     border: solid;
   }
 
-h2{ 
-  
-  font-size: 50px;
-  background-color: rgb(180, 225, 151);
-  color: rgb(78, 148, 79);
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-style: oblique;}
+  h2 {
+    font-size: 50px;
+    background-color: rgb(180, 225, 151);
+    color: rgb(78, 148, 79);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-style: oblique;
+  }
 
-  .body1{
+  .body1 {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-template-areas: "nav"
-                          "main"
-                          "footer";
-    
-    
-    }
-    
-    .body1 header nav{
-      grid-area: nav;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      background-color: rgb(245, 223, 153);
-    
-    }
-    
-    .body1 header nav ul{
-   justify-content: center;
-    
-    }
-    .body1 header nav ul li{ grid-area: nav;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      background-color: rgb(245, 223, 153);
-      margin: 20px;
-      padding: 20px;
-      
-    }
-    
-    .body1 main{
-      grid-area: main;
-      background-color: rgb(233, 239, 192);
-    border: solid;color: rgb(0, 0, 0) 2px;
-    }
-    
-    }
-    
-    .body1 footer{
-      grid-area: footer;
-      background-color: rgb(128, 126, 123);
-    border: solid;color: rgb(0, 0, 0) 2px;
-    border-style: double;
-    }
-    
-    .body2{
-      display: grid;
-      grid-template-columns: auto;
-      grid-template-rows: auto;
-      grid-template-areas: "nav2"
-                            "main2"
-                            "footer2"       
-    
-    }
-    
-    .body2 header nav{ 
-      grid-area: nav2;
-      border: solid;color: rgb(0, 0, 0) 2px;
-      background-color:  rgb(233, 239, 192);
-      list-style: none;
-      justify-content: center;
-      align-items: center;
-    
-    
-    }
-    .body2 header nav ul{
-      
-      display: flex;
+    grid-template-areas:
+      "nav"
+      "main"
+      "footer";
+  }
+
+  .bodyindex header nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    }
-    .body2 header nav ul li{
-      padding: 10px;
-      list-style: none;
-    }
-    .body2 main{
-      grid-area: main2;
-      background-color: rgb(233, 239, 192);
-      border: solid;color: rgb(0, 0, 0) 2px;
-    
-    }
+    background-color: rgb(245, 223, 153);
+  }
 
-    .body2 footer{
-      grid-area: footer2;
-      background-color: rgb(128, 126, 123);
-      border: solid; color:rgb(0, 0, 0) 2px;
-      border-style: double;
-    
-    
-    }
-  
- 
+  .bodyindex header nav ul {
+    justify-content: center;
+  }
+  .bodyindex header nav ul li {
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(245, 223, 153);
+    margin: 20px;
+    padding: 20px;
+  }
 
+  .bodyindex main {
+    grid-area: main;
+    background-color: rgb(233, 239, 192);
+    border: solid;
+    color: rgb(0, 0, 0) 2px;
+  }
+}
 
+.bodyindex footer {
+  grid-area: footer;
+  background-color: rgb(128, 126, 123);
+  border: solid;
+  color: rgb(0, 0, 0) 2px;
+  border-style: double;
+}
 
+.bodypages {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "nav2"
+    "main2"
+    "footer2";
+}
 
+.bodypages header nav {
+  grid-area: nav2;
+  border: solid;
+  color: rgb(0, 0, 0) 2px;
+  background-color: rgb(233, 239, 192);
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+.bodypages header nav ul {
+  display: flex;
+  justify-content: center;
+}
+.bodypages header nav ul li {
+  padding: 10px;
+  list-style: none;
+}
+.bodypages main {
+  grid-area: main2;
+  background-color: rgb(233, 239, 192);
+  border: solid;
+  color: rgb(0, 0, 0) 2px;
+}
 
-
+.bodypages footer {
+  grid-area: footer2;
+  background-color: rgb(128, 126, 123);
+  border: solid;
+  color: rgb(0, 0, 0) 2px;
+  border-style: double;
+}
